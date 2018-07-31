@@ -20,6 +20,8 @@ app.post('/states', (req, res, next) => {
   // res.send('welcome, ' + req.body.username);
 
   console.log('states:', req.body.body);
+
+  res.json({ ok: true });
 });
 
 app.listen(PORT, () => {
